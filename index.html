@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Maths Calculator</title>
+    </head>
+    <body style="background-color: powderblue;">
+    <center>
+        <h1><marquee>Maths Calculator</marquee></h1>
+        <hr>
+        <div>First Number
+            <input type="number" id="input1">
+        </div>
+        <div>Second Number
+            <input type="number" id="input2">
+        </div>
+        <hr>
+        <button onclick="add()">Addition</button>&nbsp;
+        
+        <button onclick="multiply()">Multiply</button>&nbsp;
+        
+        <button onclick="divide()">Division</button>&nbsp;
+        
+        <button onclick="substract()">Substraction</button>&nbsp;
+        
+        <script>
+            function add(){
+                var result = Number(document.getElementById("input1").value) + Number(document.getElementById("input2").value)
+                alert("Your Answer Is " +  result);
+            }
+            function multiply(){
+                var result = Number(document.getElementById("input1").value) * Number(document.getElementById("input2").value)
+                alert("Your Answer Is " +  result);
+            }
+            function divide(){
+                var result = Number(document.getElementById("input1").value) / Number(document.getElementById("input2").value)
+                alert("Your Answer Is " +  result);
+            }
+            function substract(){
+                var result = Number(document.getElementById("input1").value) - Number(document.getElementById("input2").value)
+                alert("Your Answer Is " +  result);
+            }
+     </script>
+    </center> 
+    </body>
+</html>
